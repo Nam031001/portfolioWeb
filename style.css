@@ -1,0 +1,195 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --colors-surface-variant: rgb(23 24 28 / 100%);
+    --colors-surface-dim: rgb(52 55 61 / 100%);
+    --colors-surface: rgb(39 41 46 / 100%);
+    --colors-surface-bright: rgb(48 51 57 / 100%);
+    --colors-container-1: rgb(55 58 66 / 100%);
+    --colors-container-2: rgb(68 72 80 / 100%);
+    --colors-container-3: rgb(79 82 92 / 100%);
+    --colors-container-4: rgb(89 93 104 / 100%);
+    --colors-container-5: rgb(98 102 112 / 100%);
+    --colors-on-surface: rgb(248 248 249 / 100%);
+    --colors-on-surface-var: rgb(39 45 63 / 100%);
+    --colors-outline: rgb(86 98 131 / 100%);
+    --colors-outline-variant: rgb(184 190 204 / 100%);
+    --colors-inverse-surface: rgb(241 242 242 / 100%);
+    --colors-inverse-on-surface: rgb(21 22 25 / 100%);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --colors-surface-variant: rgb(241 242 243 / 100%);
+    --colors-surface-dim: rgb(248 248 249 / 100%);
+    --colors-surface: rgb(252 252 252 / 100%);
+    --colors-surface-bright: rgb(255 255 255 / 100%);
+    --colors-container-1: rgb(235 235 236 / 100%);
+    --colors-container-2: rgb(228 228 230 / 100%);
+    --colors-container-3: rgb(221 222 223 / 100%);
+    --colors-container-4: rgb(215 215 217 / 100%);
+    --colors-container-5: rgb(208 209 211 / 100%);
+    --colors-on-surface: rgb(50 51 54 / 100%);
+    --colors-on-surface-var: rgb(184 190 204 / 100%);
+    --colors-outline: rgb(117 128 155 / 100%);
+    --colors-outline-variant: rgb(39 45 63 / 100%);
+    --colors-inverse-surface: rgb(45 46 49 / 100%);
+    --colors-inverse-on-surface: rgb(235 235 236 / 100%);
+  }
+}
+:root {
+  --type-scale-desktop-dfs-3: 10px;
+  --type-scale-desktop-dfs-2: 12px;
+  --type-scale-desktop-dfs-1: 14px;
+  --type-scale-desktop-dfs-0: 16px;
+  --type-scale-desktop-dfs1: 18px;
+  --type-scale-desktop-dfs2: 20px;
+  --type-scale-desktop-dfs3: 22px;
+  --type-scale-desktop-dfs4: 25px;
+  --type-scale-desktop-dfs5: 28px;
+  --type-scale-desktop-dfs6: 36px;
+  --type-scale-desktop-dfs7: 45px;
+  --type-scale-desktop-dfs8: 58px;
+  --type-scale-desktop-dfs9: 73px;
+  --type-scale-desktop-dfs10: 82px;
+  --type-scale-desktop-dfs11: 92px;
+  --type-scale-desktop-dfs12: 104px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+  color: var(--colors-on-surface);
+  color-scheme: light dark;
+  background-color: var(--colors-surface-variant);
+}
+
+body {
+  margin-block: 1.375rem;
+  margin-inline: 2.5rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.icon {
+  fill: var(--colors-on-surface);
+}
+
+svg {
+  fill: var(--colors-on-surface);
+}
+
+a {
+  color: var(--colors-on-surface);
+  text-decoration: none;
+}
+
+.main-text {
+  color: var(--colors-container-5);
+}
+
+.card {
+  max-width: calc(33.3333333333vw - 4rem);
+}
+
+.img {
+  width: calc(33.3333333333vw - 4rem);
+  aspect-ratio: 4/3;
+  background-color: red;
+}
+
+.top {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu {
+  display: flex;
+  gap: 3.125rem;
+  justify-content: center;
+}
+
+.title-group {
+  display: flex;
+  gap: 0.875rem;
+  align-items: center;
+  margin-top: 4.625rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-big {
+  font-size: var(--type-scale-desktop-dfs6);
+  font-weight: 600;
+}
+
+.title-small {
+  font-size: var(--type-scale-desktop-dfs2);
+  font-weight: 500;
+}
+
+.line {
+  margin-block: 2.5rem;
+  border: solid 1px;
+}
+
+.wline {
+  margin-block: 2.5rem;
+  border: solid 0.8px;
+}
+
+#main_bottom {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#main_bottom svg {
+  width: -moz-fit-content;
+  width: fit-content;
+  width: calc(100vw - 6rem);
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.main-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: right;
+}
+
+.topNav {
+  display: grid;
+  grid-template-rows: 2fr;
+  grid-column: 2;
+}
+
+.main-text {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  height: 30vh;
+  margin-block: 6.125rem;
+}
+
+#u {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+#p {
+  grid-row: 3;
+  grid-column: 5;
+}
+
+#h {
+  grid-row: 4;
+  grid-column: 8;
+  text-align: right;
+}

@@ -1,0 +1,45 @@
+:root {
+  --type-scale-desktop-dfs-3: 10px;
+  --type-scale-desktop-dfs-2: 12px;
+  --type-scale-desktop-dfs-1: 14px;
+  --type-scale-desktop-dfs-0: 16px;
+  --type-scale-desktop-dfs1: 18px;
+  --type-scale-desktop-dfs2: 20px;
+  --type-scale-desktop-dfs3: 22px;
+  --type-scale-desktop-dfs4: 25px;
+  --type-scale-desktop-dfs5: 28px;
+  --type-scale-desktop-dfs6: 36px;
+  --type-scale-desktop-dfs7: 45px;
+  --type-scale-desktop-dfs8: 58px;
+  --type-scale-desktop-dfs9: 73px;
+  --type-scale-desktop-dfs10: 82px;
+  --type-scale-desktop-dfs11: 92px;
+}
+
+.info {
+  font-size: var(--type-scale-desktop-dfs5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.tel {
+  width: 100%;
+  grid-column: 2/span 2;
+}
+
+.email {
+  width: 100%;
+  grid-column: 2/span 2;
+}
+
+.insta {
+  width: 100%;
+  grid-column: 2/span 2;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

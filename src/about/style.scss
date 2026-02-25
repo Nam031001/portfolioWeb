@@ -1,0 +1,115 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --colors-surface-variant: rgb(23 24 28 / 100%);
+    --colors-surface-dim: rgb(52 55 61 / 100%);
+    --colors-surface: rgb(39 41 46 / 100%);
+    --colors-surface-bright: rgb(48 51 57 / 100%);
+    --colors-container-1: rgb(55 58 66 / 100%);
+    --colors-container-2: rgb(68 72 80 / 100%);
+    --colors-container-3: rgb(79 82 92 / 100%);
+    --colors-container-4: rgb(89 93 104 / 100%);
+    --colors-container-5: rgb(98 102 112 / 100%);
+    --colors-on-surface: rgb(248 248 249 / 100%);
+    --colors-on-surface-var: rgb(39 45 63 / 100%);
+    --colors-outline: rgb(86 98 131 / 100%);
+    --colors-outline-variant: rgb(184 190 204 / 100%);
+    --colors-inverse-surface: rgb(241 242 242 / 100%);
+    --colors-inverse-on-surface: rgb(21 22 25 / 100%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --colors-surface-variant: rgb(241 242 243 / 100%);
+    --colors-surface-dim: rgb(248 248 249 / 100%);
+    --colors-surface: rgb(252 252 252 / 100%);
+    --colors-surface-bright: rgb(255 255 255 / 100%);
+    --colors-container-1: rgb(235 235 236 / 100%);
+    --colors-container-2: rgb(228 228 230 / 100%);
+    --colors-container-3: rgb(221 222 223 / 100%);
+    --colors-container-4: rgb(215 215 217 / 100%);
+    --colors-container-5: rgb(208 209 211 / 100%);
+    --colors-on-surface: rgb(50 51 54 / 100%);
+    --colors-on-surface-var: rgb(184 190 204 / 100%);
+    --colors-outline: rgb(117 128 155 / 100%);
+    --colors-outline-variant: rgb(39 45 63 / 100%);
+    --colors-inverse-surface: rgb(45 46 49 / 100%);
+    --colors-inverse-on-surface: rgb(235 235 236 / 100%);
+  }
+}
+
+:root {
+  // 타이포 타입스케일
+  --type-scale-desktop-dfs-3: 10px;
+  --type-scale-desktop-dfs-2: 12px;
+  --type-scale-desktop-dfs-1: 14px;
+  --type-scale-desktop-dfs-0: 16px;
+  --type-scale-desktop-dfs1: 18px;
+  --type-scale-desktop-dfs2: 20px;
+  --type-scale-desktop-dfs3: 22px;
+  --type-scale-desktop-dfs4: 25px;
+  --type-scale-desktop-dfs5: 28px;
+  --type-scale-desktop-dfs6: 36px;
+  --type-scale-desktop-dfs7: 45px;
+  --type-scale-desktop-dfs8: 58px;
+  --type-scale-desktop-dfs9: 73px;
+  --type-scale-desktop-dfs10: 82px;
+  --type-scale-desktop-dfs11: 92px;
+  --type-scale-desktop-dfs12: 104px;
+}
+
+html{
+  overflow: auto;
+}
+
+.flex{
+  display: flex;
+  margin-inline: 6.25rem;
+}
+
+.left{
+  margin-top: 4.125rem;
+  text-align: center;
+}
+.name{
+  font-size: var(--type-scale-desktop-dfs4);
+}
+.design{
+  font-size: var(--type-scale-desktop-dfs3);
+}
+
+.right{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  column-gap: 7rem;
+  row-gap: 3.375rem;
+  margin-left: 15.5rem;
+  margin-top: 1.25rem;
+  line-height: 1.4375rem;
+}
+.right-title{
+  font-size: var(--type-scale-desktop-dfs2);
+  font-weight: 700;
+  margin-bottom: .625rem;
+}
+
+.edu{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.career{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.skill{
+  grid-column: 2;
+  grid-row: 2 / span 2;
+}
+
+.license{
+  grid-column: 2;
+  grid-row: 1;
+}
